@@ -46,10 +46,10 @@ public class BMICalcPlus {
     public static void main(String[] args) {
         System.out.println("Starting BMICalcPlus...");
 
-        Person myPerson = new Person(2,60);
+        Person myPerson = new Person(2 /*m*/, 60 /*kg*/);
         System.out.println(myPerson.CalcBMI());
 
-        EnglishPerson myEnglishPerson = new EnglishPerson((6*12)+1,200); 
+        EnglishPerson myEnglishPerson = new EnglishPerson((6*12)+1 /*6'1"*/,200 /*lbs*/); 
         System.out.println(myEnglishPerson.CalcBMI());
 
         EnglishPerson anotherPerson = new EnglishPerson(80, 190);
