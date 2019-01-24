@@ -12,12 +12,14 @@ class Person {
     }
 
     // Constructors
-    Person()
+    Person() // Default Constructor
     {
-        // Default Constuctor
+        height = 0;
+        weight = 0;
     }
 
     Person(float heightIn, float weightIn) {
+        this(); // Must be the first line in a constructor.
         setHeight(heightIn);
         setWeight(weightIn);
     }
@@ -34,6 +36,10 @@ class EnglishPerson extends Person {
 
     public void setWeight(float weightIn) { 
         super.setWeight(weightIn * (float)0.45); // Convert lbs to kg
+    }
+
+    EnglishPerson() {
+        super(); // Must be the first line in a constructor.
     }
 
     EnglishPerson(float heightIn, float weightIn) {
