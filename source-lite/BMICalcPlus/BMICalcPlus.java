@@ -30,6 +30,8 @@ class Person {
 }
 
 class EnglishPerson extends Person {
+    
+    // Setters
     public void setHeight(float heightIn) { 
         super.setHeight(heightIn * (float)0.025); // convert inchs to meters
     }
@@ -38,6 +40,7 @@ class EnglishPerson extends Person {
         super.setWeight(weightIn * (float)0.45); // Convert lbs to kg
     }
 
+    // Constructors
     EnglishPerson() {
         super(); // Must be the first line in a constructor.
     }
