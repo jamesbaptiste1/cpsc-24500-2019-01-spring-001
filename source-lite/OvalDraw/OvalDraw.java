@@ -51,6 +51,6 @@ class OvalFrame extends JFrame {
 public class OvalDraw {
     public static void main(String[] args) {
         System.out.println("OvalDraw Starting...");
-        JFrame myFrame = new OvalFrame();
+        OvalFrame myFrame = new OvalFrame();
     }
 }
